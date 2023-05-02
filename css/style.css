@@ -4,8 +4,25 @@ body {
 }
 
 .the__fork {
-    font-size: 70px;
-    border: 2px solid black;
-    width: 100px;
-    overflow: auto;
+    font-size: 40px;
+    border-bottom: 5px solid black;
+    width: fit-content;
+}
+
+.button {
+    background-color: burlywood;
+    font-size: 24px;
+    border-bottom: 2px solid black;
+    border-radius: 50px;
+}
+
+.paragrafo {
+    background-color: coral;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+.imagem__grande {
+    height: 200px;
+    width: 300px;
 }
