@@ -1,6 +1,8 @@
-body {
+* {
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
 }
 
 .the__fork {
@@ -32,6 +34,20 @@ body {
     width: 300px;
 }
 
+.imagem__grande:hover {
+    height: 250px;
+    width: 350px;
+    border: 2px solid black;
+}
+
 .menu {
     position: sticky;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    border-bottom: 3px solid brown;
 }
