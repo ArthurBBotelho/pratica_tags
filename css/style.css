@@ -6,27 +6,38 @@
 }
 
 .the__fork {
+    align-items: center;
+}
+
+.the__fork {
     font-size: 40px;
     border-bottom: 5px solid black;
     width: fit-content;
+}
+
+.menu {
+    text-align: center;
 }
 
 .button {
     background-color: burlywood;
     font-size: 24px;
     border-bottom: 2px solid black;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 10px 50px;
+    height: 50px;
 }
 
 .button:hover {
+    height: 200px;
     background-color: brown;
 }
 
 .paragrafo {
-    background-color: coral;
+    padding: 10px;
     margin: 20px;
     border: 5px solid black;
+    border-radius: 5px;
 }
 
 .imagem__grande {
@@ -46,8 +57,4 @@
 
 a:visited {
     color: black;
-}
-
-a:hover {
-    border-bottom: 3px solid brown;
 }
