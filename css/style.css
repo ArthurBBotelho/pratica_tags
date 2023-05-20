@@ -6,7 +6,7 @@
 
 body {
     display: grid;
-    grid-template-rows: 4, 200px;
+    grid-template-rows: repeat(4, auto);
     grid-template-columns: 150px, auto, 150px;
     grid-template-areas:
         "menu . ."
@@ -29,38 +29,46 @@ body {
 
 /*--------------------------------RECEITAS FVORITAS---------------------------------- */
 
-.receitas {
+.receitas-grid {
     grid-area: receitas;
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
     grid-template-areas:
-        "bolo-cenoura bolo-cenoura carbonara"
-        "bolo-cenoura bolo-cenoura almondegas"
-        "panini peixe-dore salada-chuchu";
+        "peixe-dore peixe-dore carbonara"
+        "peixe-dore peixe-dore almondegas"
+        "bolo-cenoura panini salada-chuchu"
+    ;
+    gap: 5px;
 }
 
 .img-bolo-cenoura {
+    height: 300px;
     grid-area: bolo-cenoura;
 }
 
 .img-carbonara {
+    height: 300px;
     grid-area: carbonara;
 }
 
 .img-almondegas {
+    height: 300px;
     grid-area: almondegas;
 }
 
 .img-panini {
+    height: 300px;
     grid-area: panini;
 }
 
 .img-peixe-dore {
+    height: 300px;
     grid-area: peixe-dore;
 }
 
 .img-salada-chuchu {
+    height: 300px;
     grid-area: salada-chuchu;
 }
 
