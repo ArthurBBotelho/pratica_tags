@@ -32,9 +32,36 @@ body {
 .receitas {
     grid-area: receitas;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: ;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas:
+        "bolo-cenoura bolo-cenoura carbonara"
+        "bolo-cenoura bolo-cenoura almondegas"
+        "panini peixe-dore salada-chuchu";
+}
+
+.img-bolo-cenoura {
+    grid-area: bolo-cenoura;
+}
+
+.img-carbonara {
+    grid-area: carbonara;
+}
+
+.img-almondegas {
+    grid-area: almondegas;
+}
+
+.img-panini {
+    grid-area: panini;
+}
+
+.img-peixe-dore {
+    grid-area: peixe-dore;
+}
+
+.img-salada-chuchu {
+    grid-area: salada-chuchu;
 }
 
 /*--------------------------------FOOTER---------------------------------- */
