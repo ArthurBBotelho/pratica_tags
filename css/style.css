@@ -15,17 +15,29 @@ body {
         "footer footer footer";
 }
 
+/*--------------------------------MENU---------------------------------- */
+
 .menu {
     grid-area: menu;
 }
+
+/*--------------------------------DESCRITIVO---------------------------------- */
 
 .descritivo {
     grid-area: descritivo;
 }
 
+/*--------------------------------RECEITAS FVORITAS---------------------------------- */
+
 .receitas {
     grid-area: receitas;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: ;
 }
+
+/*--------------------------------FOOTER---------------------------------- */
 
 .footer {
     grid-area: footer;
