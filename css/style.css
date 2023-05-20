@@ -2,59 +2,31 @@
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-
 }
 
-.the__fork {
-    align-items: center;
-}
-
-.the__fork {
-    font-size: 40px;
-    border-bottom: 5px solid black;
-    width: fit-content;
-}
-
-.menu {
-    text-align: center;
-}
-
-.button {
-    background-color: burlywood;
-    font-size: 24px;
-    border-bottom: 2px solid black;
-    border-radius: 10px;
-    padding: 10px 50px;
-    height: 50px;
-}
-
-.button:hover {
-    height: 200px;
-    background-color: brown;
-}
-
-.paragrafo {
-    padding: 10px;
-    margin: 20px;
-    border: 5px solid black;
-    border-radius: 5px;
-}
-
-.imagem__grande {
-    height: 200px;
-    width: 300px;
-}
-
-.imagem__grande:hover {
-    height: 250px;
-    width: 350px;
-    border: 2px solid black;
+body {
+    display: grid;
+    grid-template-rows: 4, 200px;
+    grid-template-columns: 150px, auto, 150px;
+    grid-template-areas:
+        "menu . ."
+        ". descritivo descritivo"
+        ". receitas receitas"
+        "footer footer footer";
 }
 
 .menu {
-    position: sticky;
+    grid-area: menu;
 }
 
-a:visited {
-    color: black;
+.descritivo {
+    grid-area: descritivo;
+}
+
+.receitas {
+    grid-area: receitas;
+}
+
+.footer {
+    grid-area: footer;
 }
